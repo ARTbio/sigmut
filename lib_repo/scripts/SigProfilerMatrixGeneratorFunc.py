@@ -7,12 +7,12 @@
 from __future__ import print_function
 from . import SigProfilerMatrixGenerator as matGen
 import os
-import SigProfilerMatrixGenerator as sig
+import lib_repo as sig
 import re
 import sys
 import pandas as pd
 import datetime
-from SigProfilerMatrixGenerator.scripts import convert_input_to_simple_files as convertIn
+from lib_repo.scripts import convert_input_to_simple_files as convertIn
 import uuid
 import shutil
 import time
@@ -22,7 +22,7 @@ import itertools
 import statsmodels
 import matplotlib as plt
 from pathlib import Path
-import sigProfilerPlotting as sigPlt
+from lib_repo.SigProfPlot import sigProfilerPlotting as sigPlt
 import scipy
 
 def perm(n, seq):
