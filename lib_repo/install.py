@@ -16,9 +16,8 @@ import pandas as pd
 import shutil
 import logging
 import hashlib
-from SigProfilerMatrixGenerator.scripts import convert_input_to_simple_files as convertIn
-from SigProfilerMatrixGenerator.scripts import SigProfilerMatrixGeneratorFunc as matGen
-
+from lib_repo.scripts import convert_input_to_simple_files as convertIn
+from lib_repo.scripts import SigProfilerMatrixGeneratorFunc as matGen
 
 def md5(fname):
     hash_md5 = hashlib.md5()
